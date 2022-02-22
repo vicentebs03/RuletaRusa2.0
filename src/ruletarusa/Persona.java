@@ -42,7 +42,14 @@ public class Persona {
         return cedula;
     }
     
-    
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Cedula: ").append(cedula).append("\n");
+        sb.append("Nombre Completo: ").append(nombreCompleto).append("\n");
+        sb.append("Edad: ").append(edad).append(" años.").append("\n");
+        return sb.toString();
+    }
     
     
 }
